@@ -34,14 +34,14 @@ pip install git+git://github.com:pytorch/fairseq.git@dd106d9534b22e7db859a6b87ff
 ```
 
 ## Usage examples
-We include a set of examples in the [examples](./examples) folder:
+We include a set of examples in the [examples](examples) folder:
 *  [Discrete speech resynthesis (& compression)](./examples/resynthesis/)
 *  [Probing for speaker information in the representations](./examples/speaker_probing/)
 *  [Generative Spoken Language Modeling (aka Speech Continuation)](./examples/gslm/)
 *  [The Expresso Dataset & Expressive Discrete Resynthesis](./examples/expresso/)
 *  [Textually Pretrained Speech Language Models(TWIST)](./examples/twist/)
 
-There is also a [[Jupyter notebook]](./examples/resynthesis_and_continuation.ipynb) and a [[Google Colab]](https://colab.research.google.com/github/facebookresearch/textlesslib/blob/main/examples/resynthesis_and_continuation.ipynb) that combine discrete resynthesis and speech continuation examples in a step-by-step mini-tutorial.
+There is also a [[Jupyter notebook]](examples/resynthesis_and_continuation.ipynb) and a [[Google Colab]](https://colab.research.google.com/github/facebookresearch/textlesslib/blob/main/examples/resynthesis_and_continuation.ipynb) that combine discrete resynthesis and speech continuation examples in a step-by-step mini-tutorial.
 
 We believe those examples can serve both as illustrations for the provided components and provide
 a starting point for tinkering in interesting directions.
