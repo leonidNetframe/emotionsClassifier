@@ -21,7 +21,7 @@ def find_all_files(path_dir, extension):
 
 
 def load_classification_model(checkpoint_path):
-    feature_extractor = AutoFeatureExtractor.from_pretrained(checkpoint_path)
+    feature_extractor = AutoFeatureExtractor.from_pretrained(checkpoint_path, local_files_only=True)
     model = (
         AutoModelForAudioClassification.from_pretrained(checkpoint_path).cuda().eval()
     )
