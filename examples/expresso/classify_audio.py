@@ -46,6 +46,7 @@ def predict_audio(audio, feature_extractor, model, label_names):
     features["input_values"] = features["input_values"].cuda()
 
     logits = model(**features).logits
+    print('logits', logits)
     p = torch.argmax(logits, dim=-1)[0].item()
     print('pred_id', p)
     pred_id = p
