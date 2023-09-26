@@ -118,6 +118,8 @@ if __name__ == "__main__":
 
     # Load classification model
     feature_extractor, model, label_names = load_classification_model(args.model_ckpt)
+    print("label_names")
+    print(label_names)
 
     # Perform prediction
     print("Performing audio prediction...")
@@ -127,6 +129,7 @@ if __name__ == "__main__":
             predict_audio(audio_path, feature_extractor, model, label_names)[0]
         )
     print("...done!")
+    print(predictions)
 
     if args.output_file is not None:
         # Create output dirs
