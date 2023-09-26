@@ -58,8 +58,10 @@ def predict_audio(audio, feature_extractor, model, label_names):
 
     probabilities = F.softmax(logits, dim=-1)
     example_probabilities = probabilities[0]
+    probability_sum = example_probabilities.sum().item()
 
     print('example_probabilities', example_probabilities)
+    print('probability_sum', probability_sum)
     return label_names[pred_id], logits.detach().cpu().numpy()
 
 
