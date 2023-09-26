@@ -9,7 +9,7 @@ from transformers import AutoFeatureExtractor, AutoModelForAudioClassification
 
 import os
 from tqdm import tqdm
-
+import torch.nn.functional as F
 
 def find_all_files(path_dir, extension):
     out = []
@@ -46,6 +46,7 @@ def predict_audio(audio, feature_extractor, model, label_names):
     features["input_values"] = features["input_values"].cuda()
 
     logits = model(**features).logits
+    # pred_id = torch.argmax(logits, dim=-1)[0].item()
     print('logits', logits)
     p = torch.argmax(logits, dim=-1)
     print('pred_id p1', p)
@@ -55,6 +56,10 @@ def predict_audio(audio, feature_extractor, model, label_names):
     print('pred_id  p3', p3)
     pred_id = p
 
+    probabilities = F.softmax(logits, dim=-1)
+    example_probabilities = probabilities[0]
+
+    print('example_probabilities', example_probabilities)
     return label_names[pred_id], logits.detach().cpu().numpy()
 
 
