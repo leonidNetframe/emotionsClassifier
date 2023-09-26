@@ -47,8 +47,12 @@ def predict_audio(audio, feature_extractor, model, label_names):
 
     logits = model(**features).logits
     print('logits', logits)
-    p = torch.argmax(logits, dim=-1)[0].item()
-    print('pred_id', p)
+    p = torch.argmax(logits, dim=-1)
+    print('pred_id p1', p)
+    p2 = p[0]
+    print('pred_id  p2', p2)
+    p3 = p2.item()
+    print('pred_id  p3', p3)
     pred_id = p
 
     return label_names[pred_id], logits.detach().cpu().numpy()
