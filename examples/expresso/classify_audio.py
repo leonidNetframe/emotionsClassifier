@@ -21,8 +21,8 @@ def find_all_files(path_dir, extension):
 
 
 def load_classification_model(checkpoint_path):
-    # feature_extractor = AutoFeatureExtractor.from_pretrained(checkpoint_path)
-    feature_extractor = AutoFeatureExtractor.from_pretrained('../../models/')
+    feature_extractor = AutoFeatureExtractor.from_pretrained(checkpoint_path)
+    # feature_extractor = AutoFeatureExtractor.from_pretrained('anton-l/wav2vec2-base-ft-keyword-spotting')
     model = (
         AutoModelForAudioClassification.from_pretrained(checkpoint_path).cuda().eval()
     )
