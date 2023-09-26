@@ -46,15 +46,15 @@ def predict_audio(audio, feature_extractor, model, label_names):
     features["input_values"] = features["input_values"].cuda()
 
     logits = model(**features).logits
-    # pred_id = torch.argmax(logits, dim=-1)[0].item()
-    print('logits', logits)
-    p = torch.argmax(logits, dim=-1)
-    print('pred_id p1', p)
-    p2 = p[0]
-    print('pred_id  p2', p2)
-    p3 = p2.item()
-    print('pred_id  p3', p3)
-    pred_id = p
+    pred_id = torch.argmax(logits, dim=-1)[0].item()
+    # print('logits', logits)
+    # p = torch.argmax(logits, dim=-1)
+    # print('pred_id p1', p)
+    # p2 = p[0]
+    # print('pred_id  p2', p2)
+    # p3 = p2.item()
+    # print('pred_id  p3', p3)
+    # pred_id = p
 
     probabilities = F.softmax(logits, dim=-1)
     example_probabilities = probabilities[0]
