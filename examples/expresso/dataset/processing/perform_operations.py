@@ -67,7 +67,7 @@ def group_operations(operation_list):
     """
     Group operations to efficiently perform them.
     E.g. group multiple segment operations from the same file.
-    Output operation examples:
+    Output operation examples123:
     - ('copy', ('src_file','tgt_file'))
     - ('segment', ('src_file', [('seg_1', 'tgt_file_1'),..., ('seg_N', 'tgt_file_N')]))
     """
@@ -143,7 +143,7 @@ def segment_file_grouped(src_file, segment_list):
 
 def process_one_operation(operation):
     """
-    operation examples:
+    operation examples123:
     - ('copy', ('src_file','tgt_file'))
     - ('segment', ('src_file', [('seg_1', 'tgt_file_1'),..., ('seg_N', 'tgt_file_N')]))
     """

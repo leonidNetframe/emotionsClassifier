@@ -117,7 +117,7 @@ The ASR is performed using [fairseq's speech recognition example](https://github
 SUBSET_NAME="expresso"
 
 cd $FAIRSEQ_ROOT
-python examples/speech_recognition/infer.py \
+python examples123/speech_recognition/infer.py \
     ${DATA_DIR} --task audio_finetuning \
     --nbest 1 \
     --path path/to/wav2vec_vox_960h_pl.pt \
@@ -173,7 +173,7 @@ For F0 evals, you need to prepare a `generated_data.tsv` file, containing `"ref"
 Then run the following command
 ```bash
 cd $FAIRSEQ_ROOT
-python examples/speech_synthesis/evaluation/eval_f0.py \
+python examples123/speech_synthesis/evaluation/eval_f0.py \
     generated_data.tsv --ffe
 ```
 

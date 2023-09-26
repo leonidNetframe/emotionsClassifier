@@ -19,7 +19,7 @@ cd textlesslib
 pip install -e .
 pip install git+https://github.com/pytorch/fairseq
 pip install transformers wget
-cd examples/twist
+cd examples123/twist
 ```
 
 To run speech continuation with our pretrained models over specific speech prompt use:
