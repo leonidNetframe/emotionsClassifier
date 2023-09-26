@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d62af9c-713b-4840-98bb-a691d9b51c0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/textlesslib/.gitignore" beforeDir="false" />
+    <list default="true" id="8d62af9c-713b-4840-98bb-a691d9b51c0b" name="Changes" comment="logs">
+      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/emotionsClassifier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/emotionsClassifier.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,9 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2VtmXsD2PrUpWEq36qPVXfRJFNV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,6 +44,17 @@
     "last_opened_file_path": "/home/leo/projects/netframe/colabs/emotionsClassifier"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/examples/textlesslib" />
+      <recent name="$PROJECT_DIR$/examples/textlesslib/models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/examples" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,6 +64,135 @@
       <option name="presentableId" value="Default" />
       <updated>1695663793983</updated>
     </task>
+    <task id="LOCAL-00001" summary="add tsv + model configs">
+      <option name="closed" value="true" />
+      <created>1695684910783</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695684910783</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add tsv + model configs">
+      <option name="closed" value="true" />
+      <created>1695685284145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695685284145</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add tsv + model configs">
+      <option name="closed" value="true" />
+      <created>1695727631790</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695727631790</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add conda env">
+      <option name="closed" value="true" />
+      <created>1695733877815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695733877815</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix path">
+      <option name="closed" value="true" />
+      <created>1695741876561</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695741876561</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix path">
+      <option name="closed" value="true" />
+      <created>1695741897798</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695741897798</updated>
+    </task>
+    <task id="LOCAL-00007" summary="local_files_only=True">
+      <option name="closed" value="true" />
+      <created>1695742322903</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695742322903</updated>
+    </task>
+    <task id="LOCAL-00008" summary="relative path">
+      <option name="closed" value="true" />
+      <created>1695743094647</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695743094647</updated>
+    </task>
+    <task id="LOCAL-00009" summary="pretrained from huggingface">
+      <option name="closed" value="true" />
+      <created>1695743922226</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695743922226</updated>
+    </task>
+    <task id="LOCAL-00010" summary="pretrained from huggingface">
+      <option name="closed" value="true" />
+      <created>1695743984201</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695743984201</updated>
+    </task>
+    <task id="LOCAL-00011" summary="small wav's">
+      <option name="closed" value="true" />
+      <created>1695744900917</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695744900917</updated>
+    </task>
+    <task id="LOCAL-00012" summary="confused.wav">
+      <option name="closed" value="true" />
+      <created>1695745341590</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695745341590</updated>
+    </task>
+    <task id="LOCAL-00013" summary="confused.wav">
+      <option name="closed" value="true" />
+      <created>1695745430889</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695745430889</updated>
+    </task>
+    <task id="LOCAL-00014" summary="confused.wav">
+      <option name="closed" value="true" />
+      <created>1695745556818</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695745556818</updated>
+    </task>
+    <task id="LOCAL-00015" summary="logs">
+      <option name="closed" value="true" />
+      <created>1695746049579</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695746049579</updated>
+    </task>
+    <task id="LOCAL-00016" summary="logs">
+      <option name="closed" value="true" />
+      <created>1695746643675</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695746643675</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -55,5 +205,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add tsv + model configs" />
+    <MESSAGE value="add conda env" />
+    <MESSAGE value="fix path" />
+    <MESSAGE value="local_files_only=True" />
+    <MESSAGE value="relative path" />
+    <MESSAGE value="pretrained from huggingface" />
+    <MESSAGE value="small wav's" />
+    <MESSAGE value="confused.wav" />
+    <MESSAGE value="logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="logs" />
   </component>
 </project>

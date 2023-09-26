@@ -1,0 +1,18 @@
+export DATA_DIR=/home/leo/projects/netframe/textless/pretrained/textlesslib
+export MANIFEST_FILE=$DATA_DIR/expresso.tsv
+export LABEL_FILE=$DATA_DIR/expresso.labels
+export PREDICTION_FILE=$DATA_DIR/expresso.predictions
+export CKPT_DIR=/home/leo/projects/netframe/textless/pretrained/textlesslib/model
+
+
+export DATA_DIR=/home/leo/leo/emotionsClassifier
+export MANIFEST_FILE=$DATA_DIR/expresso.tsv
+export LABEL_FILE=$DATA_DIR/expresso.labels
+export PREDICTION_FILE=$DATA_DIR/expresso.predictions
+export CKPT_DIR=$DATA_DIR/models/
+
+python examples/expresso/classify_audio.py \
+    --model_ckpt $CKPT_DIR \
+    --from_tsv $MANIFEST_FILE \
+    --label_file $LABEL_FILE \
+    --output_file $PREDICTION_FILE
