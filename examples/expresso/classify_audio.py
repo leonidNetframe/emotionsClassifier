@@ -2,6 +2,7 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
+import json
 
 import torch
 import torchaudio
@@ -62,8 +63,14 @@ def predict_audio(audio, feature_extractor, model, label_names):
     percentage_strings = [f'{prob * 100:.2f}%' for prob in example_probabilities]
 
     # Create a dictionary with labels as keys and percentage strings as values
-    label_percentage_dict = {f'{label_names[i]}': percentage for i, percentage in enumerate(percentage_strings)}
+    # label_percentage_dict = {f'{label_names[i]}': percentage for i, percentage in enumerate(percentage_strings)}
+    label_percentage_dict = {label_names[i]: percentage for i, percentage in enumerate(percentage_strings)}
+    formatted_json = json.dumps(label_percentage_dict, indent=4)
 
+    # Print the formatted JSON
+    print(formatted_json)
+    # label_percentage_dict now contains the desired mapping
+    print(label_percentage_dict)
     # label_percentage_dict now contains the desired mapping
     print('label_percentage_dict', label_percentage_dict)
 
