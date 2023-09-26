@@ -59,9 +59,16 @@ def predict_audio(audio, feature_extractor, model, label_names):
     probabilities = F.softmax(logits, dim=-1)
     example_probabilities = probabilities[0]
     probability_sum = example_probabilities.sum().item()
+    percentage_strings = [f'{prob * 100:.2f}%' for prob in example_probabilities]
+
+    # Create a dictionary with labels as keys and percentage strings as values
+    label_percentage_dict = {f'{label_names[i]}': percentage for i, percentage in enumerate(percentage_strings)}
+
+    # label_percentage_dict now contains the desired mapping
+    print('label_percentage_dict', label_percentage_dict)
 
     print('example_probabilities', example_probabilities)
-    print('probability_sum', probability_sum)
+    # print('probability_sum', probability_sum)
     return label_names[pred_id], logits.detach().cpu().numpy()
 
 
