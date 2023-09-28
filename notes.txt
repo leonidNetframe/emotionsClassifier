@@ -13,3 +13,7 @@ python examples/expresso/classify_audio.py \
 
 
  git commit -a -m new && git push
+
+ssh leo@35.204.211.173
+
+scp -r ./datasets leo@35.204.211.173:/home/leo/leo/emotionsClassifier/
