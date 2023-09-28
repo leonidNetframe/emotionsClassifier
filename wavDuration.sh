@@ -1,6 +1,6 @@
 #!/bin/bash
 
-input_dir="/home/leo/projects/netframe/colabs/emotionsClassifier/datasets/turkish/"
+input_dir="/home/leo/projects/netframe/colabs/emotionsClassifier/datasets/expresoDataset/"
 
 for file in "$input_dir"/*.wav; do
     filename=$(basename -- "$file")
